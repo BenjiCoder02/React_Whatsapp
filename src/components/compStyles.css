@@ -1,0 +1,192 @@
+/*  #075E54 teal-green dark
+    #25D366 Light green
+    #128C7E Teal green
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  margin: auto;
+  font-family: Helvetica, sans-serif;
+}
+
+/* NAVBAR styles */
+.App {
+  background-color: white;
+  height: 100vh;
+}
+.list {
+  margin-top: 120px;
+}
+
+.navbar {
+  background-color: #128c7e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 150px;
+}
+
+.top,
+.right-nav button,
+.bottom a {
+  color: white;
+}
+
+.top {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top h2 .logo {
+  border-radius: 100%;
+}
+
+.top h2 .logo {
+  background-color: #25d366;
+  width: 35px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
+.top h2 {
+  margin: auto auto auto 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 165px;
+}
+
+.right-nav {
+  margin-right: 0px;
+}
+
+.right-nav button {
+  background: none;
+  border: none;
+  margin: auto 15px;
+  cursor: pointer;
+}
+
+.right-nav button:hover {
+  border-radius: 50%;
+  color: rgb(194, 194, 194);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-size: 12px;
+  margin: 0px auto 10px auto;
+  height: 40px;
+}
+
+.bottom h3 a {
+  text-decoration: none;
+}
+
+.bottom h3 {
+  height: 20px;
+}
+
+.bottom .active {
+  border-bottom: 3px solid white;
+}
+
+.bottom h3 a:active {
+  border-bottom: 3px solid white;
+}
+
+/* CHAT LIST STYLES */
+
+.chatList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chatList-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.chatList-top .date,
+.chatList-bottom .message {
+  color: gray;
+}
+
+.chatList-top .date {
+  font-size: 14px;
+}
+
+.chatList-top .chat-num,
+.chatList-top .date {
+  margin: 0px auto auto auto;
+}
+
+.chatList-top h2 {
+  font-size: 20px;
+}
+
+.chatList .top {
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  color: black;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.chatList .avatar {
+  margin: 0px 0px auto 10px;
+}
+
+.chatList .avatar img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.chatList div .message {
+  display: flex;
+  justify-content: center;
+}
+
+.chatList-bottom .message {
+  margin: -10px auto 10px 30px;
+}
+
+.chatList-bottom {
+  width: 100%;
+  margin: auto 0px;
+}
+
+@media screen and (max-width: 400px) {
+  .chatList .avatar img {
+    height: 50px;
+    width: 50px;
+  }
+  .chatList h2 {
+    font-size: 16px;
+  }
+  .chatList p,
+  .chatList .date {
+    font-size: 12px;
+  }
+  .chatList .message {
+    margin-left: 25px;
+  }
+}
